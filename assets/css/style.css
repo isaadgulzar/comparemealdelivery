@@ -117,7 +117,7 @@ img{
     color: #F3B42C;
 }
 .top-choices .card, .sidebar-right .card {
-    box-shadow: 0px 7px 25px #C1DDEE;
+    box-shadow: 0px 7px 25px #C1DDEE !important;
 }
 .top-choices .card .product-details-list {
     list-style-type: none;
