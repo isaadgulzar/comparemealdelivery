@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
     <link rel="icon" type="image/png" href="./assets/images/ba0ae581-10d7-461f-bcc3-e13921f85430.png">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
@@ -15,33 +15,20 @@
     <link href="./assets/css/default.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
-    <style>
-        @media only screen and (min-width: 769px) {
-
-            .hero-content h2,
-            .hero-content p {
-                color: #484848 !important
-            }
-        }
-        .borderr {
-            border: 1px solid red;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container borderr px-0">
-        <nav class="row navbar navbar-expand-md navbar-light bg-white">
-            <div class="col-lg-4 px-0">
+    <div class="bar"></div>
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-lg-0">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo.png" width="" alt="logo.png">
+                    <img src="./assets/images/logo.png" alt="logo.png">
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation"></button>
-            </div>
-            <div class="collapse navbar-collapse col-lg-5 ml-auto px-0" id="collapsibleNavId">
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse ml-auto px-0" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -65,7 +52,7 @@
             </div>
         </nav>
     </div>
-    <div class="container borderr">
+    <div class="container">
         <div class="row home-image">
             <div class="col-lg-7 p-5 pl-2r">
                 <h1 class="home-title">Top 10 Meal Delivery Services <span><br></span> For 2020</h1>
@@ -85,7 +72,7 @@
                     </li>
                 </ul>
                 <p>
-                    <span class="badge badge-light rounded-25 p-2 px-3">
+                    <span class="badge rounded-25 p-2 px-3">
                         Last Updated: December 2020
                     </span>
                 </p>
@@ -444,7 +431,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container card rounded-0 mb-3">
                 <div class="row">
                     <div class="col-12 my-3">
@@ -513,22 +499,58 @@
                     </div>
                 </div>
             </div>
-            <div class="single-widget-blk">
-                <h2 class="side-wd-title">Recommended Reads</h2>
-                <div class="wd-inner-contnet-blk">
-                    <div class="inner-links-all">
-                        <a href="/articles/intro-to-keto-diet.html">Science-Backed Tips for the Keto
-                            Diet</a>
-                        <a href="/articles/intro-to-vegan-diet.html">Nutritionist's Guidelines for a Vegan
-                            Diet</a>
-                        <a href="/articles/5-reasons-to-use-meal-prep.html">5 Reasons to Use Meal Prep</a>
+            <div class="container card rounded-0 mb-3">
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <h4 class="font-weight-bold">Recommended Reads</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="" src="./assets/images/r1.png">
+                    </div>
+                    <div class="col-md-6 pl-0">
+                        <p class="mb-0 f-14">Science-Backed Tips for the Keto Diet</p>
+                        <a class="lm-link" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-6">
+                        <img class="" src="./assets/images/r2.png">
+                    </div>
+                    <div class="col-md-6 pl-0">
+                        <p class="mb-0 f-14">Nutritionist's Guidelines for a Vegan Diet</p>
+                        <a class="lm-link" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <img class="" src="./assets/images/r3.png">
+                    </div>
+                    <div class="col-md-6 pl-0">
+                        <p class="mb-0 f-14">5 Reasons to Use Meal Prep</p>
+                        <a class="lm-link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container card rounded-0 mb-3">
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <h4 class="font-weight-bold">How we Rank?</h4>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <p class="f-14">
+                            Our experts evaluate each company based on four factors          
+                        </p>
+                        <button type="button" class="btn btn-block btn-outline-danger">Read More</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/rank.png">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div id="Footer-section">
+    <div id="Footer-section" class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-4 mt-5">
@@ -538,11 +560,11 @@
                 </div>
                 <div class="col-8 text-right mt-5">
                     <ul class="footer-nav">
-                        <li>Home</li>
-                        <li>Articles</li>
-                        <li>Reviews</li>
-                        <li>Contact</li>
-                        <li>Privacy</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
                     </ul>
                 </div>
             </div>
@@ -552,1019 +574,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 p-3">
-                    <p class="text-center mb-1">Copyright® 2020 comparemealdelivery.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-bar-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-5 d-flex align-items-center">
-                    <div class="site-logo">
-                        <a href="/">
-                            <img src="https://assets.leads-iq.com/assets/img/cmdb5b314ae-ab5a-4109-827e-ec49471dab19.png"
-                                alt="comparemealdelivery.com">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-7 hidden-xs">
-                    <div class="site-main-menu">
-                        <ul>
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="/reviews.html">REVIEWS</a></li>
-                            <li><a href="/articles.html">ARTICLES</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hero-area"
-        style="background-image: url(https://assets.leads-iq.com/assets/img/cmd8b66709a-755d-4fbf-866c-2c938bdc9d7f.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero-content">
-                        <h2>Top 10 Meal Delivery Services For 2020</h2>
-                        <p class="hidden-xs">Sign up for a meal plan to save time and start adding to your recipe
-                            collection. Compare the top brands and make the choice that best suits your lifestyle.</p>
-                        <p style="font-size:14px;font-weight:normal">
-                            Last Updated: <span style="font-weight:600">December 2020</span>
-                        </p>
-                    </div>
+                    <p class="text-center mb-1 f-14">Copyright &copy 2020 comparemealdelivery.com</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="site-main-inner-area has-location">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="site-inner-wrp">
-                        <div class="site-inner-top-blk">
-                            <div class="select-wrp">
-                            </div>
-                            <div class="main-top-right-text">
-                                <p><a id="ad-link" data-toggle="modal" data-target="#ad-disclosure-modal">Advertising
-                                        Disclosure</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inner-contnet-des">
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="705"
-                            data-position="1"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">1</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd3e3e0b39-1e46-47c9-8cda-ec2ffa66a23b.png"
-                                                alt="Blue Apron">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>13,699 reviews on 2 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Blue Apron</h2>
-                                        <h2 class="mob-only">Blue Apron</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Get $60 off
-                                                        first 3 boxes</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Fresh &amp;
-                                                        sustainable ingredients</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>23 meal options
-                                                        available every week</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Reschedule,
-                                                        skip, or cancel anytime</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">9.8</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=705&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=1"
-                                                rel="nofollow noopener" data-co-id="705" data-position="1"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=705&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=1"
-                                                    rel="nofollow noopener" data-co-id="705" data-position="1">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="706"
-                            data-position="2"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">2</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmdfcacdd1b-1b84-4bfc-b59b-8211cc6be4ce.png"
-                                                alt="Home Chef">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>19,919 reviews on 3 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Home Chef</h2>
-                                        <h2 class="mob-only">Home Chef</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Get $90 off
-                                                        your first 4 orders</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>38 weekly menu
-                                                        options + oven-ready</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Delicious,
-                                                        healthy meals ready in 30 minutes</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Free Shipping
-                                                        on orders of $49+</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">9.5</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=706&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=2"
-                                                rel="nofollow noopener" data-co-id="706" data-position="2"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=706&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=2"
-                                                    rel="nofollow noopener" data-co-id="706" data-position="2">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="708"
-                            data-position="3"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">3</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd66df771c-2583-40a0-8a64-01bccf3fded1.png"
-                                                alt="Freshly">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>15,337 reviews on 2 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Freshly</h2>
-                                        <h2 class="mob-only">Freshly</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$60 off your
-                                                        first 4 orders</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Pre-made meals
-                                                        take 3 minutes to heat</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Choose from 30+
-                                                        meal options each week</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Flexible - skip
-                                                        or cancel anytime</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">9.3</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=708&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=3"
-                                                rel="nofollow noopener" data-co-id="708" data-position="3"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=708&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=3"
-                                                    rel="nofollow noopener" data-co-id="708" data-position="3">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="707"
-                            data-position="4"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">4</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd38f72995-4d70-41d3-b8ff-6e440bb46127.png"
-                                                alt="HelloFresh">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>11,378 reviews on 2 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">HelloFresh</h2>
-                                        <h2 class="mob-only">HelloFresh</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$80 off
-                                                        including free shipping</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>22 chef-curated
-                                                        recipes every week</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Cook in 30
-                                                        minutes or less</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Fresh,
-                                                        sustainably-sourced ingredients</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">9.1</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=707&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=4"
-                                                rel="nofollow noopener" data-co-id="707" data-position="4"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=707&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=4"
-                                                    rel="nofollow noopener" data-co-id="707" data-position="4">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="709"
-                            data-position="5"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">5</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd4a9d1a39-a5d2-4889-ad6a-5da1f3db113d.png"
-                                                alt="Sun Basket">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>7,801 reviews on 1 website</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Sun Basket</h2>
-                                        <h2 class="mob-only">Sun Basket</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$35 off and 4
-                                                        FREE Gifts</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check"
-                                                        aria-hidden="true"></i><span>Nutritionist-approved dishes</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Seasonal &amp;
-                                                        organic meal kits</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Keto, vegan,
-                                                        vegetarian and paleo plans</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">9.0</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=709&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=5"
-                                                rel="nofollow noopener" data-co-id="709" data-position="5"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=709&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=5"
-                                                    rel="nofollow noopener" data-co-id="709" data-position="5">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="710"
-                            data-position="6"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">6</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmdde80efdd-2c78-4468-8352-01b1657fb511.png"
-                                                alt="Green Chef">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>10,442 reviews on 3 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Green Chef</h2>
-                                        <h2 class="mob-only">Green Chef</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$80 off first 5
-                                                        orders + Free Shipping</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Keto,
-                                                        plant-based, and paleo options</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>USDA certified
-                                                        organic company</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Flexible
-                                                        subscription plan</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">8.9</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=710&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=6"
-                                                rel="nofollow noopener" data-co-id="710" data-position="6"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=710&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=6"
-                                                    rel="nofollow noopener" data-co-id="710" data-position="6">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="711"
-                            data-position="7"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">7</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd6334f809-58cf-47ac-9cec-d5ea848b0a6c.png"
-                                                alt="Purple Carrot">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 3" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 4" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>9,658 reviews on 2 websites</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Purple Carrot</h2>
-                                        <h2 class="mob-only">Purple Carrot</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Get $30 off
-                                                        with code carrot30</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Vegan,
-                                                        gluten-free, and high protein options</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Many new meal
-                                                        options weekly</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>100%
-                                                        plant-based recipes</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">8.7</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=711&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=7"
-                                                rel="nofollow noopener" data-co-id="711" data-position="7"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=711&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=7"
-                                                    rel="nofollow noopener" data-co-id="711" data-position="7">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="712"
-                            data-position="8"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">8</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd1a6c7ee8-92d6-4b9b-93c9-9d20e0681e36.png"
-                                                alt="Marley Spoon">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 3" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>2,173 reviews on 1 website</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Marley Spoon</h2>
-                                        <h2 class="mob-only">Marley Spoon</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$80 off your
-                                                        first 4 boxes</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>6-step Meals by
-                                                        Martha Stewart</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>New menu items
-                                                        added weekly</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Reschedule,
-                                                        skip, or cancel anytime</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">8.4</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=712&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=8"
-                                                rel="nofollow noopener" data-co-id="712" data-position="8"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=712&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=8"
-                                                    rel="nofollow noopener" data-co-id="712" data-position="8">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-inner-contet-des" data-location="chart-offer-box" data-co-id="713"
-                            data-position="9"
-                            style="border: 0px none rgb(29, 29, 27) !important; box-shadow: rgb(166, 166, 166) 0px 0px 6px !important; overflow: initial;">
-                            <div class="all-s-items-info">
-                                <span class="number-item"
-                                    style="color: rgb(72, 72, 72); width: 40px; height: 40px;">9</span>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="left-info-des">
-                                        <div class="top-logo-des">
-                                            <img src="https://assets.leads-iq.com/assets/img/cmd512e63f9-c22d-4e7a-9fa1-da45ef983370.png"
-                                                alt="Dinnerly">
-                                        </div>
-                                        <div class="rating-wrp hidden-sm">
-                                            <div class="starts">
-                                                <ul class="ratings">
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 0" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 1" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star 2" aria-hidden="true"></i>
-                                                    </li>
-                                                    <li class="rating">
-                                                        <i class="fa fa-star-half 3" aria-hidden="true"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <p>1,654 reviews from 1 website</p>
-                                        </div>
-                                        <div class="left-ifo-des-bottom">
-                                            <ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-inner-conten-wrp">
-                                    <div class="inner-lists-blk">
-                                        <h2 class="hidden-xs">Dinnerly</h2>
-                                        <h2 class="mob-only">Dinnerly</h2>
-                                        <div class="lists-inner">
-                                            <ul>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>$45 off your
-                                                        first 3 boxes</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Meals designed
-                                                        for any lifestyle</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Quick &amp;
-                                                        easy cooking instructions</span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-check" aria-hidden="true"></i><span>Flexible
-                                                        subscription - skip at any time</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-des-srt-conten-wrp">
-                                    <div class="single-des-rt-blk" style="max-height:160px">
-                                        <div class="rating-wrp rating-wrp-right">
-                                            <p class="score" style="line-height:36px">8.1</p>
-                                            <p style="margin-top:0">Our Rating</p>
-                                        </div>
-                                        <div class="main-btn">
-                                            <a class="site-btn" data-location="chart-visit-site"
-                                                href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=713&amp;offerId=&amp;offerLocation=chart-visit-site&amp;offerPosition=9"
-                                                rel="nofollow noopener" data-co-id="713" data-position="9"
-                                                style="background-color: rgb(228, 64, 95);">View Plan</a>
-                                        </div>
-                                        <div class="main-des-bottom">
-                                            <p><a data-location="chart-learn-more"
-                                                    href="/click?url=https%3A%2F%2Fcomparemealdelivery.com%2F&amp;chartOfferId=713&amp;offerId=&amp;offerLocation=chart-learn-more&amp;offerPosition=9"
-                                                    rel="nofollow noopener" data-co-id="713" data-position="9">Learn
-                                                    more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="site-main-inner-side-bar-wrp">
-                        <div class="single-widget-blk">
-                            <h2 class="side-wd-title">Why Compare Plans?</h2>
-                            <div class="wd-inner-contnet-blk">
-                                <div class="single-item">
-                                    <h4>Be Informed</h4>
-                                    <p>We’ve spent over 200+ hours researching and reviewing the Top Meal Delivery
-                                        Services to give you our best choices.</p>
-                                </div>
-                                <div class="single-item">
-                                    <h4>Choose Confidently</h4>
-                                    <p>Review our list and choose the meal delivery plan that works best for your
-                                        budget, dietary needs and lifestyle</p>
-                                </div>
-                                <div class="single-item">
-                                    <h4>Get Started</h4>
-                                    <p>Sign up and subscribe for a meal plan and start cooking as soon as next week!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-widget-blk">
-                            <h2 class="side-wd-title">Editorial Reviews</h2>
-                            <div class="wd-inner-contnet-blk">
-                                <div class="single-logo-blk">
-                                    <div class="wd-logo">
-                                        <a href="/reviews/home-chef.html"><img
-                                                src="https://assets.leads-iq.com/assets/img/cmdfcacdd1b-1b84-4bfc-b59b-8211cc6be4ce.png"
-                                                alt="Home Chef"></a>
-                                    </div>
-                                    <div class="logo-texts">
-                                        <h3>Home Chef</h3>
-                                        <a href="/reviews/home-chef.html">Learn more</a>
-                                    </div>
-                                </div>
-                                <div class="single-logo-blk">
-                                    <div class="wd-logo">
-                                        <a href="/reviews/blue-apron.html"><img
-                                                src="https://assets.leads-iq.com/assets/img/cmd3e3e0b39-1e46-47c9-8cda-ec2ffa66a23b.png"
-                                                alt="Blue Apron"></a>
-                                    </div>
-                                    <div class="logo-texts">
-                                        <h3>Blue Apron</h3>
-                                        <a href="/reviews/blue-apron.html">Learn more</a>
-                                    </div>
-                                </div>
-                                <div class="single-logo-blk">
-                                    <div class="wd-logo">
-                                        <a href="/reviews/hellofresh.html"><img
-                                                src="https://assets.leads-iq.com/assets/img/cmd38f72995-4d70-41d3-b8ff-6e440bb46127.png"
-                                                alt="HelloFresh"></a>
-                                    </div>
-                                    <div class="logo-texts">
-                                        <h3>HelloFresh</h3>
-                                        <a href="/reviews/hellofresh.html">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-widget-blk">
-                            <h2 class="side-wd-title">Recommended Reads</h2>
-                            <div class="wd-inner-contnet-blk">
-                                <div class="inner-links-all">
-                                    <a href="/articles/intro-to-keto-diet.html">Science-Backed Tips for the Keto
-                                        Diet</a>
-                                    <a href="/articles/intro-to-vegan-diet.html">Nutritionist's Guidelines for a Vegan
-                                        Diet</a>
-                                    <a href="/articles/5-reasons-to-use-meal-prep.html">5 Reasons to Use Meal Prep</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="footer-left-blk">
-                        <div class="footer-logo">
-                            <a href="/">
-                                <img src="https://assets.leads-iq.com/assets/img/cmda2b42d94-6fd7-46dc-a2ea-711965f1b973.png"
-                                    alt="comparemealdelivery.com">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="footer-menu-section">
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/articles.html">Articles</a></li>
-                            <li><a href="/reviews.html">Reviews</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                            <li><a href="/terms.html">Terms</a></li>
-                            <li><a href="/privacy-policy.html">Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="foote-cp-text">
-                        <p>Copyright® 2020 comparemealdelivery.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div>
-
-        <div class="modal fade" id="ad-disclosure-modal" tabindex="-1" role="dialog"
-            aria-labelledby="ad-disclosure-title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ad-disclosure-title">Advertising Disclosure</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" id="ad-disclosure-content" style="font-size: 14px">
-                        <span>comparemealdelivery.com</span> is a free online resource that offers reviews and
-                        comparisons of companies and the products and services they provide. The information on our site
-                        has been compiled by our editorial team and while our writers are instructed to provide the most
-                        accurate, thorough and up-to-date information available, the opinions, ratings and content on
-                        this site are subjective and may contain inaccuracies. All representations and warranties
-                        regarding the accuracy of the information is disclaimed. The companies we review may pay us
-                        referral fees if customers click on links, fill out forms, or call phone numbers on our site.
-                        While the ratings and positions of our advertising partners are determined by our subjective
-                        review of the products and services provided, placement of our advertising partners may also be
-                        influenced by the compensation they pay to us. Company trademarks featured on our site are the
-                        property of their respective trademark holders and listings on our site do not imply
-                        endorsement. We update the information on our site regularly but is subject to change at any
-                        time.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="hwr-modal" tabindex="-1" role="dialog" aria-labelledby="hwr-title"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="hwr-title">How We Rank</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" id="hwr-content" style="font-size: 14px">
-                        <span>comparemealdelivery.com</span> rankings are determined based on our team’s comprehensive
-                        review of each brand. We consider consumer interest, user feedback, product features, pricing
-                        and the overall value of the products and services being provided to you. We synthesize all of
-                        this in-depth research into the rankings we give to each brand so you can feel confident in your
-                        purchasing decision. In order to keep our site a free online resource for our users, we may
-                        receive monetary compensation from the brands we list.
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <script src="./assets/js/jquery.min.js"></script>
         <script src="./assets/js/Popper.js"></script>
