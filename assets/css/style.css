@@ -3,13 +3,6 @@
 body, html {
     font-family: 'Poppins', sans-serif !important;
 }
-:root   {
-    --white: #fff;
-    --black: #000;
-    --lightBlue: #09BCBE;
-    --darkBlue: #062B55;
-    --darkPink: #e4405f;
-}
 .pr-2r {
     padding-right: 2rem!important;
 }
@@ -21,22 +14,22 @@ body, html {
     font-size: 16px;
 }
 .btn-danger {
-    background: var(--darkPink) !important;
+    background: #e4405f !important;
 }
 .btn-danger:hover {
-    background: var(--white) !important;
-    border-color: var(--darkPink) !important;
-    color: var(--darkPink) !important;
+    background: #fff !important;
+    border-color: #e4405f !important;
+    color: #e4405f !important;
 }
 .btn-outline-danger {
-    border-color: var(--darkPink) !important;
+    border-color: #e4405f !important;
 }
 .btn-outline-danger:hover {
-    background: var(--darkPink) !important;
+    background: #e4405f !important;
 }
 .bar {
     height: 13px;
-    background: var(--darkBlue);
+    background: #062B55;
 }
 .navbar-brand img{
     width: 456px;
@@ -45,16 +38,16 @@ body, html {
     padding: 0px !important;
 }
 .nav-item:hover .nav-link{
-    color: var(--lightBlue) !important;
-    border-bottom: 1px solid var(--lightBlue);
+    color: #09BCBE !important;
+    border-bottom: 1px solid #09BCBE;
 }
 .dropdown-item:hover{
-    color: var(--lightBlue) !important;
-    background-color: var(--white);
+    color: #09BCBE !important;
+    background-color: #fff;
 }
 .nav-item.active .nav-link{
-    color: var(--lightBlue) !important;
-    border-bottom: 1px solid var(--lightBlue);
+    color: #09BCBE !important;
+    border-bottom: 1px solid #09BCBE;
 }
 .navbar ul .nav-item{
     padding-left: 1.7rem !important;
@@ -62,15 +55,15 @@ body, html {
 .home-image {
     background: black url('../images/Clip.png');
     height: 440px;
-    color: var(--white);
+    color: #fff;
 }
 .home-title {
-    color: var(--white);
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
 }
 .home-subtitle {
-    color: var(--white);
+    color: #fff;
     font-size: 20px;
 }
 .services-list {
@@ -117,7 +110,7 @@ img{
     color: #F3B42C;
 }
 .top-choices .card, .sidebar-right .card {
-    box-shadow: 0px 7px 25px #C1DDEE !important;
+    box-shadow: 0px 7px 25px #C1DDEE;
 }
 .top-choices .card .product-details-list {
     list-style-type: none;
@@ -136,7 +129,7 @@ img{
 .product-pricing .top-choice-wrapper{
     font-size: 14px;
     font-weight: bold;
-    color: var(--black);
+    color: #000;
 }
 .rating-wrapper {
     font-size: 15px;
@@ -144,7 +137,7 @@ img{
 .rating-pt {
     font-size: 36px;
     font-weight: bold;
-    color: var(--black);
+    color: #000;
     padding-left: 7px;
 }
 .product-count{
@@ -171,18 +164,18 @@ img{
     font-size: 14px;
 }
 .editorial-name {
-    color: var(--darkBlue);
+    color: #062B55;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
 }
 .lm-link {
-    color: var(--lightBlue);
+    color: #09BCBE;
     font-size: 14px;
-    border-bottom: 1px solid var(--lightBlue);  
+    border-bottom: 1px solid #09BCBE;  
 }
 .text-lightblue {
-    color: var(--lightBlue);
+    color: #09BCBE;
 }
 .f-14 {
     font-size: 14px !important;
@@ -199,24 +192,24 @@ img{
 .footer-nav li{
     display: inline-block;
     padding-left: 20px;
-    color: var(--white);
+    color: #fff;
 }
 .footer-nav li a{
-    color: var(--white);
+    color: #fff;
 }
 .footer-nav li a:hover{
-    color: var(--darkPink);
+    color: #e4405f;
 }
 @media only screen and (max-width:600px) {
     .navbar-brand img{
         width: 256px;
     }
     .nav-item.active .nav-link{
-        color: var(--lightBlue) !important;
+        color: #09BCBE !important;
         border-bottom: none;
     }
     .nav-item:hover .nav-link{
-        color: var(--lightBlue) !important;
+        color: #09BCBE !important;
         border-bottom: none;
     }
 }
